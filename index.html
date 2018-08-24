@@ -1,10 +1,60 @@
 <!DOCTYPE <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <title>Formulario</title>
 </head>
 <body>
+    <form action="#" method="GET">
+        <fieldset>
+            <legend>Formulario</legend>
+            <fieldset>
+                <legend>Personal</legend>
+                    <fieldset>
+                        <legend>Name</legend>
+                        <label for="firstname">Firstname: </label>
+                        <input type="text" name="firstname" id="firstname" placeholder=":v" required>
+                        <label for="lastname">Lastname: </label>
+                        <input type="text" name="lastname" id="lastname" placeholder="Bv" required>
+                    </fieldset>                                          
+                    <div>
+                        <label for="Date_of_birth">Date of birth:</label>
+                        <input type="date" name="Date_of_birth" id="Date_of_birth" required>
+
+                    </div>
+                    <div>
+                        <label for="pet-select">Choose a pet:</label>
+
+                        <select id="pet-select">
+                            <option value="">--Please choose an option--</option>
+                            <option value="dog">Dog</option>
+                            <option value="cat">Cat</option>
+                            <option value="hamster">Hamster</option>
+                            <option value="parrot">Parrot</option>
+                            <option value="spider">Spider</option>
+                            <option value="goldfish">Goldfish</option>
+                            <option value="turtle">Turtle</option>
+                            <option value="Gecko">Gecko</option>
+                            <option value="im_alone">Im alone :"v</option>
+                        </select>
+                    </div>
+            </fieldset>
+            <fieldset>
+                <legend>Account</legend>
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" placeholder="12345@wasd.com" required>
+
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Write your password" pattern=".{8,15}"
+                title="8 to 15 characters">
+
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="confirm your password" pattern=".{8,15}"
+                title="8 to 15 characters">
+
+            </fieldset>
+        </fieldset>
+    </form>
     
 </body>
 </html>
