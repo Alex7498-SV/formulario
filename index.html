@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Formulario</title>
+    <title>Form</title>
 </head>
 <body>
     <form action="#" method="GET">
         <fieldset>
-            <legend>Formulario</legend>
+            <legend>Form</legend>
             <fieldset>
                 <legend>Personal</legend>
                     <fieldset>
@@ -53,6 +53,22 @@
                 title="8 to 15 characters">
 
             </fieldset>
+            <fieldset>
+                <legend>Contact</legend>
+                <label for="adress">Adress: </label>
+                <input type="text" name="adress" id="adress">
+
+                <label for="city">City: </label>
+                <input type="text" name="city" id="city">
+
+                <label for="country">Country: </label>
+                <input type="text" name="coutry" id="country" required>
+
+                <label for="telefone">Telefone: </label>
+                <input type="number" name="telefone" id="telefone">
+            </fieldset>
+
+            <input type="submit" value="Sign In">
         </fieldset>
     </form>
     
